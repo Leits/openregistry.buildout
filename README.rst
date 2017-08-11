@@ -6,7 +6,7 @@ Follow the instructions:
   1. Bootstrap the buildout with Python 2.7:
 
      ```
-     $ python bootstrap.py --setuptools-version 36.0.1 --buildout-version 2.9.4
+     $ python bootstrap.py
      ```
 
   2. Build the buildout:
@@ -27,7 +27,12 @@ To start environment services:
 
     bin/circusd --daemon
 
-To to run openregistry.api instance:
+To run openregistry.api instance:
 
     bin/pserve etc/openregistry.api.ini
 
+Run the following command
+
+    bin/python run_tests.py
+
+to run all tests from all dependency packages.
