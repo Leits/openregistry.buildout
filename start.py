@@ -16,3 +16,4 @@ if os.path.isfile(couchdb_ini_file_path):
         config.write(configfile)
 
 subprocess.check_call([os.path.join(cur_dir, 'bin/circusd'), "--daemon"])
+
