@@ -1,4 +1,7 @@
-import ConfigParser, os, uuid, subprocess
+import ConfigParser
+import os
+import uuid
+import subprocess
 
 
 cur_dir = os.path.dirname(__file__)
