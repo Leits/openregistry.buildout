@@ -1,4 +1,7 @@
-import ConfigParser, os, uuid, subprocess
+import ConfigParser
+import os
+import uuid
+import subprocess
 
 
 cur_dir = os.path.dirname(__file__)
@@ -13,3 +16,4 @@ if os.path.isfile(couchdb_ini_file_path):
         config.write(configfile)
 
 subprocess.check_call([os.path.join(cur_dir, 'bin/circusd'), "--daemon"])
+
