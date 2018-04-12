@@ -41,6 +41,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
+*.xml
 
 # Translations
 *.mo
@@ -74,3 +75,6 @@ myapp.profile
 
 docs/make.bat
 docs/Makefile
+
+# pycharm
+.idea/
