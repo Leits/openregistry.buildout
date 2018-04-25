@@ -9,8 +9,8 @@ username = getpass.getuser()
 def pin_commit_hash(package, config):
     repo = Repo('')
     value = config.get('sources', package)
-    value = re.sub('branch=\w+', '',  value)
-    value = value + ' ' + 'rev={}'.format(repo.head.object.hexsha)
+    value = re.sub('rev=\w+', '',  value)
+    value = value + 'rev={}'.format(repo.head.object.hexsha)
     config.set('sources', package, value)
 
 
