@@ -2,7 +2,6 @@
 extends =
     profiles/development.cfg
     profiles/templates.cfg
-    profiles/statsd.cfg
 
 [openprocurement.api.ini]
 couchdb_db = test
